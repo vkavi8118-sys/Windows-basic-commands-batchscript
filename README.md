@@ -29,6 +29,7 @@ Create a directory named "my-folder"
 Remove the directory "my-folder"
 
 ## COMMAND AND OUTPUT
+<img width="887" height="111" alt="image" src="https://github.com/user-attachments/assets/6224e6f9-228b-4bb9-a689-1cd5db7f8ed5" />
 
 
 Create the file Rose.txt
