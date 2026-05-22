@@ -76,12 +76,12 @@ Compare the file hello.txt and rose.txt
 ## Exercise 2: Advanced Batch Scripting
 Create a batch file named on the desktop. The batch file need to have a variable assigned with a desired name for ex. name="John" and display as "Hello, John".
 
-
+```
 @echo off
 set name=John
 echo Hello, %name%!
 pause
-
+```
 
 ## OUTPUT
 <img width="506" height="80" alt="image" src="https://github.com/user-attachments/assets/734107cf-d7b1-4ab3-b359-11731a4aede3" />
@@ -95,7 +95,7 @@ Display whether the number is odd or not.
 Ask the user if they want to check another number.
 Repeat the process if the user enters Y, and exit with a thank-you message if the user enters N.
 Handle invalid inputs for the continuation prompt (Y/N) gracefully.
-
+```
 @echo off
 :main
 set /p number=Enter a number: 
@@ -115,7 +115,7 @@ goto choice
 :end
 echo Thank you for using the odd number checker!
 pause
-
+```
 ## OUTPUT
 
 
@@ -123,13 +123,13 @@ pause
 
 
 Write a batch file that uses a FOR loop to iterate over a sequence of numbers (1 to 5) and displays each number with the label Number:. The output should pause at the end.
-
+```
 @echo off
 for %%i in (1 2 3 4 5) do (
     echo Number: %%i
 )
 pause
-
+```
 
 ## OUTPUT
 
@@ -145,7 +145,7 @@ Use the IF EXIST conditional statement.
 Make sure the script works for files located in the same directory as the batch file.
 Use pause to keep the command window open after displaying the message.
 Expected Output (if the file exists):
-
+```
 @echo off
 if exist sample.txt (
     echo sample.txt exists.
@@ -153,7 +153,7 @@ if exist sample.txt (
     echo sample.txt does not exist.
 )
 pause
-
+```
 ## OUTPUT
 <img width="488" height="80" alt="image" src="https://github.com/user-attachments/assets/e15cea1f-d410-4d4e-8f0f-4095a5f581d4" />
 
@@ -163,7 +163,7 @@ Say Hello – Displays the message Hello, World!
 Create a File – Creates a file named newfile.txt with the content This is a new file
 Exit – Exits the script with a goodbye message
 The script should repeatedly display the menu until the user chooses to exit. Use goto statements to handle menu navigation.
-
+```
 @echo off
 :menu
 echo 1. Say Hello
@@ -185,7 +185,7 @@ goto menu
 :end
 echo Goodbye!
 pause
-
+```
 ## OUTPUT
 <img width="466" height="298" alt="image" src="https://github.com/user-attachments/assets/3daaf1b3-a12f-42fe-b1b9-bd6177f8362f" />
 
